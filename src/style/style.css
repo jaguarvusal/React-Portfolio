@@ -84,7 +84,7 @@ section {
 }
 
 .project-container div {
-  width: 250px;
+  width: 260px;
   height: 250px;
   background-color: #ecf0f1; 
   border-radius: 10px;
@@ -140,7 +140,7 @@ section {
 .project-container div h3 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #34495e; /* Darker gray for project titles */
+  color: rgb(228, 228, 228); /* Darker gray for project titles */
 }
 
 /* Footer Styling */
@@ -324,6 +324,159 @@ footer a, .footer-icon {
 
 .project {
   display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 16px;
+  max-width: 300px; /* Keep the width the same */
+  padding: 16px; /* Original padding */
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-bottom: 16px; /* Original spacing below the image */
+}
+
+.project-title {
+  margin: 8px 0;
+  font-size: 1.5rem;
+  color: white; /* Set the title color to white */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for better readability */
+}
+
+.project-link {
+  display: inline-block;
+  margin: 8px 0; /* Original spacing between links */
+  padding: 8px 12px; /* Original padding inside buttons */
+  font-size: 1rem; /* Original font size */
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 16px;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.project-title {
+  margin: 16px 0 8px;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 8px 12px;
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+  margin: 16px;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: transparent; /* Make the background fully transparent */
+  color: white; /* Ensure text is visible on the image */
+  text-align: center;
+}
+
+.project-content h3 {
+  margin: 8px 0;
+  font-size: 1.5rem;
+}
+
+.project-content a {
+  margin: 4px 0;
+  color: #00d8ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.project-content a:hover {
+  text-decoration: underline;
+}
+
+.project:hover .project-content {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project {
+  display: flex;
   gap: 10px;
 }
 
@@ -340,6 +493,96 @@ footer a, .footer-icon {
 .project a:hover {
   background: white;
   color: #1abc9c;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 16px;
+  max-width: 300px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-details {
+  padding: 16px;
+}
+
+.project-details h3 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.project-details a {
+  display: block;
+  margin: 4px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 16px;
+  max-width: 300px;
+  height: 400px; /* Set a fixed height for the project card */
+  background-color: #000; /* Fallback color */
+  color: white; /* Ensure text is visible */
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: transparent; /* Make the background fully transparent */
+  color: white; /* Ensure text is visible */
+  text-align: center;
+}
+
+.project-title {
+  margin: 8px 0;
+  font-size: 1.5rem;
+  color: white; /* Set the title color to white */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for better readability */
+}
+
+.project-link {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 8px 12px;
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: #1abc9c;
+  border: 1px solid #1abc9c;
 }
 
 
