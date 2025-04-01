@@ -86,13 +86,13 @@ section {
 .project-container div {
   width: 250px;
   height: 250px;
-  background-color: #ecf0f1; /* Light gray for project containers */
+  background-color: #ecf0f1; 
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* Initially hidden, will fade in */
-  animation: fadeIn 1s ease-out forwards; /* Fade-in effect for portfolio items */
+  opacity: 0; 
+  animation: fadeIn 1s ease-out forwards; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,6 @@ section {
   font-weight: 500;
   animation-delay: calc(0.1s * var(--i)); /* Staggered animation for each item */
   --i: 0; /* Custom property for animation delay */
-  font-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
   border: 1px solid #bdc3c7; /* Subtle border for project containers */
   background-image: linear-gradient(to bottom right, #ecf0f1, #bdc3c7); /* Gradient background */
@@ -273,6 +272,77 @@ footer {
 footer a, .footer-icon {
   pointer-events: auto;
 }
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  color: white;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project {
+  display: flex;
+  gap: 10px;
+}
+
+.project a {
+  color: white;
+  background: #1abc9c;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project a:hover {
+  background: white;
+  color: #1abc9c;
+}
+
+
 
 
 
