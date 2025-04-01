@@ -3,12 +3,12 @@ import Project from "../components/Project.jsx";
 
 const Portfolio = () => {
   const projects = [
-    { title: "Project 1", deployedLink: "#", githubLink: "#" },
-    { title: "Project 2", deployedLink: "#", githubLink: "#" },
-    { title: "Project 3", deployedLink: "#", githubLink: "#" },
-    { title: "Project 4", deployedLink: "#", githubLink: "#" },
-    { title: "Project 5", deployedLink: "#", githubLink: "#" },
-    { title: "Project 6", deployedLink: "#", githubLink: "#" }
+    { title: "Bootcamp Pizza Odering Website", deployedLink: "https://p1t1-group3.github.io/ProjectOne/", githubLink: "https://github.com/p1t1-group3/ProjectOne" },
+    { title: "Weather DashBoard", deployedLink: "https://weather-dashboard-application-y5xq.onrender.com/", githubLink: "https://github.com/jaguarvusal/Weather-Dashboard-Application" },
+    { title: "Content Management System", deployedLink: "#", githubLink: "https://github.com/jaguarvusal/cms.git" },
+    { title: "Vehicle Maker", deployedLink: "#", githubLink: "https://github.com/jaguarvusal/Vehicle-Maker" },
+    { title: "README Generator", deployedLink: "#", githubLink: "https://github.com/jaguarvusal/README-Generator" },
+    { title: "React Portfolio", deployedLink: "https://vusalcodingportfolio.netlify.app/", githubLink: "https://github.com/jaguarvusal/React-Portfolio" }
   ];
 
   return (
