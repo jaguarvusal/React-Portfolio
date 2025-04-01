@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+import About from "./pages/About.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Contact from "./pages/Contact.jsx";
+import Resume from "./pages/Resume.jsx";
 
 const Routes = ({ currentPage }) => {
   switch (currentPage) {

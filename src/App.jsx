@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Routes from "./Routes";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Routes from "./Routes.jsx";
 import "./style/style.css";
 
 function App() {
