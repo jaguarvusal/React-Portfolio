@@ -1,11 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// filepath: /Users/vusalshah/Desktop/React-Portfolio/vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000,
-    open: true,
+  build: {
+    outDir: "dist", // Ensure this matches your deployment platform's publish directory
   },
 });
