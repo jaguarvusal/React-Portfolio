@@ -2,7 +2,7 @@
 
   ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-  link: !@#$%^&*
+  link: https://vusalcodingportfolio.netlify.app/
 
   ## Table of Contents
 
