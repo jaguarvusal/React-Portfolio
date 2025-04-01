@@ -2,7 +2,7 @@
 
   ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-  video: !@#$%^&*
+  link: !@#$%^&*
 
   ## Table of Contents
 
@@ -24,7 +24,7 @@ a webite that showcases my portfolio of deployed apps.
 
   ## Usage
 
- !@#$%^&*
+ run mpn i to install dependencies and then npm run dev. Or just visit the deployed link above!
 
   ## Contribution
 
